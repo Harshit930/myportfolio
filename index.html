@@ -3,207 +3,384 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surya Pratap Singh</title>
-    <link rel="stylesheet" href="Style.css">
-<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+    <meta name="description" content="Surya Pratap Singh - Full Stack Developer Portfolio">
+    <title>Surya Pratap Singh | Full Stack Developer</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="Left">Surya Pratap Singh's Portfolio</div>
-            <i class="bx bx-menu" id="menu"></i>
-
-                <div class="Right">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">
                 
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+                <span class="logo-text">Surya Pratap Singh</span>
+               
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            </div>
-        </nav>
-    </header>
-<section class="firstSection" id="home">
-            <div class="leftSection">
-                <h1>
-                 Hi,My name is <span class="nameColor">Surya Pratap Singh</span>
-                </h1>
-                <div class="text-animate">
-                    <h3>Full Stack Developer</h3>
-                </div>
-                <p style="font-size: 1.5rem; margin-top: 10px;" >I am a passionate Full Stack Developer with a strong foundation in both front-end and back-end technologies.</p>
-                <div class="btn-box">
-                    <a href="" class="btn">Hire me</a>
-                    <a href="" class="btn">Let's talk</a>
-                </div>
-                <div class="home-sci">
-                <a href="https://www.instagram.com/harshit_singh__rajawat?igsh=M25idDRkZ3Jjejdj"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/Harshit930"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/surya-pratap-singh-13255a399/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-        </section>
-    <div class="about" id="about">
-        <h2 class="heading">About <span >me</span></h2>
-        <div class="about-img">
-            <img src="aboutme.png" alt="">
-            <span class="circle-spin"></span>
-
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-link cta-btn">Hire Me</a></li>
+            </ul>
         </div>
-        <div class="about-container">
-            <h3>Full Stack Developer</h3>
-            <p>I am a Full Stack Developer skilled in building responsive and dynamic web applications. I work with both front-end and back-end technologies, focusing on clean code, performance, and user experience. I am always eager to learn new technologies and turn ideas into functional digital solutions.</p>
-            <div class="btn-box btns">
-                <a href="" class="btn">Read More</a>
-            </div>
-        </div>
-    </div>
-    <section class="education" id="education">
-        <h2 class="heading">My <span>Jurney</span></h2>
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Education</h3>
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="fa-solid fa-calendar"></i>2019-2020</div>
-                            <h3>Highschool - UP Board</h3>
-                            <p>I completed my High School in 2020 from the Uttar Pradesh Board (UP Board), gaining a solid academic foundation and developing key skills like discipline.</p>
+    </nav>
 
-                        </div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">
+                        <span class="wave">👋</span>
+                        <span>Hello, I'm</span>
                     </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="fa-solid fa-calendar"></i>2021-2022</div>
-                            <h3>Intermediate - UP Board</h3>
-                            <p>I completed my Intermediate from the Uttar Pradesh Board (UP Board), gaining strong academic fundamentals along with problem-solving and organizational skills.</p>
-                            
-                        </div>
+                    
+                    <h1 class="hero-title">Surya Pratap Singh</h1>
+                    
+                    <div class="hero-subtitle">
+                        <span class="typed-text"></span>
+                        <span class="cursor-blink">|</span>
                     </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class="fa-solid fa-calendar"></i>2024-2026</div>
-                            <h3>Diploma in Computer Science – BTEUP</h3>
-                            <p>Completed a Diploma in Computer Science (2024–2026) with hands-on experience in programming, database management, and core computer science concepts.</p>
-                            
-                        </div>
+                    
+                    <p class="hero-description">
+                        Passionate Full Stack Developer crafting exceptional digital experiences 
+                        with modern technologies and clean code principles.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Harshit930" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/surya-pratap-singh-13255a399/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/harshit_singh__rajawat" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:harshitsingh1930@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-image-wrapper">
+                        <img src="aboutme.png" alt="Surya Pratap Singh" class="profile-img">
                     </div>
                 </div>
             </div>
+        </div>
         
+        <!-- Background -->
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="aboutme.png" alt="Surya Pratap Singh">
+                </div>
+                
+                <div class="about-text">
+                    <h3>Full Stack Developer & Problem Solver</h3>
+                    <p>
+                        I'm a dedicated Full Stack Developer with a passion for building 
+                        modern, scalable web applications that make a difference.
+                    </p>
+                    
+                    <p>
+                        Currently pursuing my Diploma in Computer Science, I specialize in 
+                        creating responsive, user-friendly interfaces and robust backend systems.
+                    </p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>2+</h3>
+                            <p>Years Learning</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>15+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>100%</h3>
+                            <p>Dedication</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
     <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-row">
-            <div class="skillscolumn">
-                <h3 class="title">Coding Skills</h3>
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML5</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <h3>CSS3</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <h3>React</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Django</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>MySql</h3>
+                    <div class="skill-progress">
+                        <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="progress">
-                            <h3>CSS <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1545665277-5937489579f2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Html</span>
+                            <span>Css</span>
+                            <span>JavaScript</span>
 
-                        <div class="progress">
-                            <h3>JavaScript <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
                         </div>
-
-                        <div class="progress">
-                            <h3>React <span>60%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3>Python <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
+                        <h3>Portfolio Website</h3>
+                        <p>Full-Portfolio website using html, css,JavaScript</p>
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/Harshit930" class="project-btn"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="skillscolumn">
-                <h3 class="title">Professional Skills</h3>
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Frontend Development <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>API</span>
                         </div>
-
-                        <div class="progress">
-                            <h3>Web Development <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather app with location-based forecasting.</p>
+                        <div class="project-links">
+                            <a href="" class="project-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/Harshit930" class="project-btn"><i class="fab fa-github"></i> Code</a>
                         </div>
-
-                        <div class="progress">
-                            <h3>Backend Development <span>65%</span></h3>
-                            <div class="bar"><span></span></div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=800" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Flask</span>
                         </div>
-
-                      
+                        <h3>Task Management App</h3>
+                        <p>Productivity tool with task tracking and collaboration.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/Harshit930" class="project-btn"><i class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="">
-            <div class="input-box">
-            <div class="input-field">
-                <input type="text" placeholder="Full name" required>
-                <span class="focus"></span>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
             </div>
-
-            <div class="input-field">
-                <input type="text" placeholder="Email address" required>
-                <span class="focus"></span>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's talk about everything!</h3>
+                    <p>Don't hesitate to reach out. I'd love to hear from you!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:harshitsingh1930@gmail.com">harshitsingh1930@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Kanpur, Uttar Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
         </div>
-
-        <div class="input-box">
-            <div class="input-field">
-                <input type="number" placeholder="Mobile no." required>
-                <span class="focus"></span>
-            </div>
-
-            <div class="input-field">
-                <input type="text" placeholder="Email Subject" required>
-                <span class="focus"></span>
-            </div>
-        </div>
-        <div class="textarea-field">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
-            <span class="focus"></span>
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </div>
-        </form>
-
     </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-text">
-            <p>© 2026 Surya Pratap Singh. All Rights Reserved.</p>
-        </div>
-        <div class="footer-icontop">
-            <a href=""><i class="fa-solid fa-up-long fa-beat-fade"></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <a href="#home" class="logo">
+                       
+                        <span class="logo-text">Surya Pratap Singh</span>
+                        
+                    </a>
+                    <p>Building digital experiences that matter.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Follow Me</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/Harshit930" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/surya-pratap-singh-13255a399/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/harshit_singh__rajawat" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Surya Pratap Singh. All rights reserved.</p>
+                <button class="scroll-top" id="scrollTop">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
         </div>
     </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
-<script src="Script.js">
-</script>
 </html>
